@@ -35,4 +35,4 @@ jobs:
           go-version: "1.22"
 
       - name: Run style checks
-        run: test -z "$(gofmt ./...) && echo $?"
+        run: test -z "$(go fmt ./...) && echo $?"
